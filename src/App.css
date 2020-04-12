@@ -1,0 +1,31 @@
+.MuiCardActionArea-root{
+  max-width: 0px;
+}
+img {
+  margin-top: 0px;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  top: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.textbox{
+  max-height: 90%;
+  max-width: 90%;
+  min-width: 50%;
+
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.content{
+  margin-top: 10px;
+}
