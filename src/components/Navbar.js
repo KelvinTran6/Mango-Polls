@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     title: {
+        marginRight: theme.spacing(2.5),
+    },
+    browse: {
         flexGrow: 1,
     },
 }));
@@ -17,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
 export default function ButtonAppBar() {
     const classes = useStyles();
 
-    const navStyles ={
-        color:'white',
+    const navStyles = {
+        color: 'white',
         textDecoration: 'none'
     }
 
@@ -26,17 +29,22 @@ export default function ButtonAppBar() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-
                     <Typography variant="h6" className={classes.title}>
                         <Link to="/" style={navStyles}>
-                            Mango Poll
+                            Mango Polls
                         </Link>
                     </Typography>
-                    <Link to="/Creation" style={navStyles}>
-                        <Typography>
-                            Make poll
+
+                    <Typography variant="h8" className={classes.browse}>
+                        <Link to="/Browse" style={navStyles}>
+                            Browse
+                        </Link>
                     </Typography>
-                    </Link>
+                    <Typography>
+                        <Link to="/Creation" style={navStyles}>
+                            Make a poll
+                        </Link>
+                    </Typography>
                 </Toolbar>
             </AppBar>
         </div>
